@@ -15,15 +15,40 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+.leftImg,
+.rightImg {
+    float: none;
+    margin: 0;
+    max-width: 40%;
+}
+
+.dog-images {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+ article::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 
 
 .menu-toggle {
         display: block;
         font-size: 2rem;
-   	 background: none;
+   	background: none;
     	border: none;
     	cursor: pointer;
     	}	
@@ -90,6 +115,11 @@ nav li:first-child {
 nav li a {
     display: block;
     color: #fff;
+    text-shadow:
+        -.75px -.75px 0 #000,
+         .75px -.75px 0 #000,
+        -.75px  .75px 0 #000,
+         .75px  .75px 0 #000;
     padding: 0.5em 1em;
     text-decoration: none;
 }
@@ -124,12 +154,12 @@ main {
 footer p {
     font-size: 0.75em;
     text-align: center;
-    color: #E6ECED;
+    color: #000;
     padding: 0 1em;
 }
 
 footer p a {
-    color: #E6ECED;
+    color: #000;
     text-decoration: none;
 }
 
@@ -145,15 +175,28 @@ footer p a {
         display: none;
     }
     
+    main {
+        clear: both;
+    }
     
+    img {
+    max-width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
     
+    .leftImg, 
+    .rightImg {
+    max-width: 20%;
+}
     
     .menu-toggle {
     display: none;
 }
     
     #main-nav {
-        display: block
+        display: block;
         }
     
     
@@ -183,7 +226,7 @@ footer p a {
         margin: 0 0 4% 10%;
     }
     
-    
+}
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 1015px), print {
@@ -196,7 +239,9 @@ footer p a {
     }
     
     
-    
+    main {
+        clear: both;
+    }
     
     
     .menu-toggle {
@@ -204,10 +249,7 @@ footer p a {
     
 }
 
-#main-nav {
-        display: block
-        }
-    
+
     /* Desktop Viewport: Style rules for nav area */
     nav {
         float: right;
@@ -228,6 +270,7 @@ footer p a {
     }
     
     nav li a:hover {
+    	text-shadow: none;
         color: #000;
         background-color: #fff;
     }
@@ -240,10 +283,7 @@ footer p a {
     }
     
     
-    main {
-        clear: left;
-    }
-    
+ 
     main h1 {
         font-size: 1.8em;
     }
