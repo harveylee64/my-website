@@ -195,6 +195,14 @@ footer p a {
     display: none;
 }
     
+    
+    iframe {
+    	border: 2px solid #000;
+    	border-radius: 8px;
+    	max-width: 100%;
+}
+    
+    
     #main-nav {
         display: block;
         }
