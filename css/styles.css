@@ -21,6 +21,13 @@ img {
     margin-right: auto;
 }
 
+.img2 {
+    max-width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .leftImg,
 .rightImg {
@@ -68,8 +75,8 @@ img {
     
     
 header {
-    position: -webkit-sticky; 
-    position: sticky;
+    /* position: -webkit-sticky; 
+    position: sticky; */
     top: 0;
     background-color: #E6ECED;
     padding: 10px;
@@ -89,6 +96,11 @@ header {
 .hero-text {
 	font-size: 1.5em;
 	font-family: 'Francois One', sans-serif;
+	text-shadow:
+        -.75px -.75px 0 #000,
+         .75px -.75px 0 #000,
+        -.75px  .75px 0 #000,
+         .75px  .75px 0 #000;
 }
 
 /* Style rules for navigation area */
@@ -123,6 +135,18 @@ nav li a {
     padding: 0.5em 1em;
     text-decoration: none;
 }
+
+
+#contact {
+    text-align: center;
+}
+
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+
 
 
 /* Show mobile class, hide tablet-desktop class */
@@ -186,6 +210,13 @@ footer p a {
     margin-right: auto;
 }
     
+    .img2 {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
     .leftImg, 
     .rightImg {
     max-width: 20%;
